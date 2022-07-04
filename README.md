@@ -19,7 +19,7 @@
 
 1. Clone this repository locally
 2. Open Kvantum Manager
-3. Install selected theme from `src` directory
+3. Install selected theme with Your favourite accent colour from `src` directory (i.e. Catppuccin-Mocha-Blue)
 3. Apply installed theme
 
 ## 💝 Thanks to
