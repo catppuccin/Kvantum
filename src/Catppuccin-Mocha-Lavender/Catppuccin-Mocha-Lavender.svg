@@ -5,7 +5,7 @@
    version="1"
    id="svg1810"
    sodipodi:docname="Catppuccin-Mocha-Lavender.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -19,14 +19,14 @@
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     showgrid="true"
-     inkscape:zoom="2"
-     inkscape:cx="26.5"
-     inkscape:cy="694.25"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     showgrid="false"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="353.64178"
+     inkscape:cy="72.21328"
+     inkscape:window-width="1332"
+     inkscape:window-height="734"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1810"
      inkscape:snap-bbox="true"
@@ -43,7 +43,7 @@
        spacingy="1"
        spacingx="1"
        units="px"
-       visible="true" />
+       visible="false" />
   </sodipodi:namedview>
   <defs
      id="defs18">
@@ -90,16 +90,16 @@
     <style
        type="text/css"
        id="current-color-scheme">.ColorScheme-Highlight {
-        color:#31363b;
-        stop-color:#31363b;
+        color:#b4befe;
+        stop-color:#b4befe;
       }
       .ColorScheme-Background {
         color:#eff0f1;
         stop-color:#eff0f1;
       }
       .ColorScheme-Highlight {
-        color:#5b9bf8;
-        stop-color:#5b9bf8;
+        color:#b4befe;
+        stop-color:#b4befe;
       }
       .ColorScheme-ViewText {
         color:#31363b;
@@ -5630,7 +5630,7 @@
      id="lineedit-normal"
      transform="matrix(3.7795276,0,0,3.7795276,169,-51.000001)">
     <rect
-       style="opacity:0.1;fill:#b4befe;fill-opacity:1"
+       style="opacity:0.1;fill:#313244;fill-opacity:1"
        id="rect43255"
        width="3.175"
        height="1.5875"
@@ -5641,7 +5641,7 @@
      id="lineedit-normal-left"
      transform="matrix(3.7795276,0,0,3.7795276,169,-51.000001)">
     <rect
-       style="opacity:0.1;fill:#b4befe;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;fill-opacity:1"
+       style="opacity:0.1;fill:#313244;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;fill-opacity:1"
        id="rect43257"
        width="1.5875"
        height="1.5875"
@@ -5652,7 +5652,7 @@
      id="lineedit-normal-top"
      transform="matrix(3.7795276,0,0,3.7795276,169,-51.000001)">
     <rect
-       style="opacity:0.1;fill:#b4befe;fill-opacity:1"
+       style="opacity:0.1;fill:#313244;fill-opacity:1"
        id="rect43253"
        width="3.175"
        height="1.5875"
@@ -5676,7 +5676,7 @@
      transform="matrix(3.7795276,0,0,3.7795276,169,-51.000001)">
     <path
        id="rect43263"
-       style="opacity:0.1;fill:#b4befe;stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;fill-opacity:1"
+       style="opacity:0.1;fill:#313244;stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;fill-opacity:1"
        d="m 130,99 c -3.324,0 -6,2.676 -6,6 h 6 z"
        transform="scale(0.26458333)" />
   </g>
@@ -6354,7 +6354,7 @@
     <path
        d="m 296,122 c -5.52,0 -10,4.48 -10,10 0,5.52 4.48,10 10,10 5.52,0 10,-4.48 10,-10 0,-5.52 -4.48,-10 -10,-10 z"
        id="path2261"
-       style="opacity:0.2;fill:#313244;fill-opacity:1" />
+       style="opacity:0.2;fill:#b4befe;fill-opacity:1" />
   </g>
   <g
      id="checkbox-checked-focused"
