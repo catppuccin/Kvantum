@@ -4,7 +4,7 @@ whiskers:
   matrix:
    - flavor
    - accent
-  filename: 'themes/{{ flavor.identifier }}/{{ flavor.identifier }}-{{ accent }}/catppuccin.kvconfig'
+  filename: 'themes/{{ flavor.identifier }}/{{ flavor.identifier }}-{{ accent }}/{{ flavor.identifier }}-{{ accent }}.kvconfig'
   capitalize_hex: true
 ---
 [%General]
