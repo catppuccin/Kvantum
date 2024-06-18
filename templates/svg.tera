@@ -4,7 +4,7 @@ whiskers:
   matrix:
    - flavor
    - accent
-  filename: 'themes/{{ flavor.identifier }}/{{ flavor.identifier }}-{{ accent }}/{{ flavor.identifier }}-{{ accent }}.svg'
+  filename: 'themes/catppuccin-{{ flavor.identifier }}-{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.svg'
   capitalize_hex: true
 ---
 
