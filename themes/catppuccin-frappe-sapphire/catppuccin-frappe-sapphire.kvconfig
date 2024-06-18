@@ -1,15 +1,6 @@
----
-whiskers:
-  version: "2.3.0"
-  matrix:
-   - flavor
-   - accent
-  filename: 'themes/catppuccin-{{ flavor.identifier }}-{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.kvconfig'
-  capitalize_hex: true
----
 [%General]
 author=elkrien based on Arc Dark style
-comment=Catppuccin-{{ flavor.identifier | capitalize }}-{{ accent | capitalize }}
+comment=Catppuccin-Frappe-Sapphire
 spread_menuitems=true
 left_tabs=true
 mirror_doc_tabs=true
@@ -79,27 +70,25 @@ saturation=1.00
 shadowless_popup=false
 transient_groove=false
 
-{%- set accent = flavor.colors[accent] %}
-
 [GeneralColors]
-window.color=#{{ base.hex }}
-base.color=#{{ mantle.hex }}
-alt.base.color=#{{ mantle.hex }}
-button.color=#{{ surface0.hex }}
-light.color=#{{ surface1.hex }}
-mid.light.color=#{{ surface1.hex }}
-dark.color=#{{ mantle.hex }}
-mid.color=#{{ mantle.hex }}
-highlight.color=#{{ accent.hex }}
-inactive.highlight.color=#{{ accent.hex }}
-text.color=#{{ text.hex }}
-window.text.color=#{{ text.hex }}
-button.text.color=#{{ text.hex }}
-disabled.text.color=#{{ surface2.hex }}
-tooltip.text.color=#{{ text.hex }}
-highlight.text.color=#{{ mantle.hex }}
-link.color=#{{ rosewater.hex }}
-link.visited.color=#{{ blue.hex }}
+window.color=#303446
+base.color=#292C3C
+alt.base.color=#292C3C
+button.color=#414559
+light.color=#51576D
+mid.light.color=#51576D
+dark.color=#292C3C
+mid.color=#292C3C
+highlight.color=#85C1DC
+inactive.highlight.color=#85C1DC
+text.color=#C6D0F5
+window.text.color=#C6D0F5
+button.text.color=#C6D0F5
+disabled.text.color=#626880
+tooltip.text.color=#C6D0F5
+highlight.text.color=#292C3C
+link.color=#F2D5CF
+link.visited.color=#8CAAEE
 
 [ItemView]
 inherits=PanelButtonCommand
@@ -108,7 +97,7 @@ interior.element=itemview
 frame=true
 interior=true
 text.iconspacing=3
-text.toggle.color=#{{ mantle.hex }}
+text.toggle.color=#292C3C
 
 [RadioButton]
 inherits=PanelButtonCommand
@@ -135,10 +124,10 @@ frame=true
 inherits=PanelButtonCommand
 interior.element=button
 frame.element=button
-text.normal.color=#{{ text.hex }}
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.normal.color=#C6D0F5
+text.focus.color=#C6D0F5
+text.press.color=#292C3C
+text.toggle.color=#292C3C
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
@@ -240,10 +229,10 @@ frame.bottom=3
 frame.left=3
 frame.right=3
 indicator.size=10
-text.normal.color=#{{ surface2.hex }}
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ text.hex }}
-text.toggle.color=#{{ text.hex }}
+text.normal.color=#626880
+text.focus.color=#C6D0F5
+text.press.color=#C6D0F5
+text.toggle.color=#C6D0F5
 focusFrame=true
 
 [TabBarFrame]
@@ -280,10 +269,10 @@ frame.bottom=1
 frame.left=1
 frame.right=1
 frame.expansion=0
-text.normal.color=#{{ text.hex }}
-text.focus.color=#{{ accent.hex }}
-text.press.color=#{{ text.hex }}
-text.toggle.color=#{{ text.hex }}
+text.normal.color=#C6D0F5
+text.focus.color=#85C1DC
+text.press.color=#C6D0F5
+text.toggle.color=#C6D0F5
 indicator.element=harrow
 
 [SizeGrip]
@@ -301,10 +290,10 @@ frame=true
 frame.bottom=4
 frame.left=4
 frame.right=4
-text.normal.color=#{{ text.hex }}
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ accent.hex }}
-text.toggle.color=#{{ accent.hex }}
+text.normal.color=#C6D0F5
+text.focus.color=#C6D0F5
+text.press.color=#85C1DC
+text.toggle.color=#85C1DC
 text.bold=false
 
 [MenuBar]
@@ -312,7 +301,7 @@ inherits=PanelButtonCommand
 frame.element=menubar
 interior.element=menubar
 frame.bottom=0
-text.normal.color=#{{ text.hex }}
+text.normal.color=#C6D0F5
 frame.expansion=0
 text.bold=false
 
@@ -320,10 +309,10 @@ text.bold=false
 frame.element=tbutton
 interior.element=tbutton
 indicator.element=arrow
-text.normal.color=#{{ text.hex }}
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.normal.color=#C6D0F5
+text.focus.color=#C6D0F5
+text.press.color=#292C3C
+text.toggle.color=#292C3C
 text.bold=false
 
 [Scrollbar]
@@ -365,10 +354,10 @@ frame.bottom=2
 frame.left=2
 frame.right=2
 text.margin=0
-text.normal.color=#{{ text.hex }}
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.normal.color=#C6D0F5
+text.focus.color=#C6D0F5
+text.press.color=#292C3C
+text.toggle.color=#292C3C
 text.bold=false
 frame.expansion=18
 
@@ -379,8 +368,8 @@ inherits=PanelButtonCommand
 frame.element=menu
 interior.element=menu
 inherits=PanelButtonCommand
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.press.color=#292C3C
+text.toggle.color=#292C3C
 text.bold=false
 frame.top=3
 frame.bottom=3
@@ -391,8 +380,8 @@ frame.right=3
 inherits=PanelButtonCommand
 interior.element=menuitem
 indicator.size=8
-text.focus.color=#{{ text.hex }}
-text.press.color=#{{ text.hex }}
+text.focus.color=#C6D0F5
+text.press.color=#C6D0F5
 
 [MenuBarItem]
 inherits=PanelButtonCommand
@@ -407,7 +396,7 @@ text.margin.right=5
 inherits=Toolbar
 frame.element=toolbar
 font.bold=true
-text.normal.color=#{{ text.hex }}
+text.normal.color=#C6D0F5
 frame=true
 frame.top=0
 frame.bottom=0
@@ -432,13 +421,13 @@ text.margin.top=1
 text.margin.bottom=1
 text.margin.left=3
 text.margin.right=3
-text.toggle.color=#{{ text.hex }}
+text.toggle.color=#C6D0F5
 
 [ToolboxTab]
 inherits=PanelButtonCommand
-text.normal.color=#{{ text.hex }}
-text.press.color=#{{ text.hex }}
-text.focus.color=#{{ text.hex }}
+text.normal.color=#C6D0F5
+text.press.color=#C6D0F5
+text.focus.color=#C6D0F5
 
 [Hacks]
 transparent_dolphin_view=false
