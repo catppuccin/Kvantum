@@ -5,7 +5,7 @@ whiskers:
    - flavor
    - accent
   filename: 'themes/catppuccin-{{ flavor.identifier }}-{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.svg'
-  capitalize_hex: true
+  hex_format: "{{R}}{{G}}{{B}}"
 ---
 
 {%- set accent = flavor.colors[accent] -%}

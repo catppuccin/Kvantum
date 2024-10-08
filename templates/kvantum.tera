@@ -5,7 +5,7 @@ whiskers:
    - flavor
    - accent
   filename: 'themes/catppuccin-{{ flavor.identifier }}-{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.kvconfig'
-  capitalize_hex: true
+  hex_format: "{{R}}{{G}}{{B}}"
 ---
 [%General]
 author=elkrien based on Arc Dark style
