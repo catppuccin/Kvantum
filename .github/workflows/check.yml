@@ -8,6 +8,8 @@ on:
 
 jobs:
   check:
+    # change to ubuntu-latest after GitHub properly rolls out 24.04 (whiskers v2.5.1 depends on 24.04)
+    # ref: https://github.com/actions/runner-images/issues/10636
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
