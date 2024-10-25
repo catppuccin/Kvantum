@@ -1,6 +1,7 @@
 [%General]
 author=elkrien based on Arc Dark style
 comment=Catppuccin-Frappe-Red
+combo_focus_rect=true
 spread_menuitems=true
 left_tabs=true
 mirror_doc_tabs=true

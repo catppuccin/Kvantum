@@ -10,6 +10,7 @@ whiskers:
 [%General]
 author=elkrien based on Arc Dark style
 comment=Catppuccin-{{ flavor.identifier | capitalize }}-{{ accent | capitalize }}
+combo_focus_rect=true
 spread_menuitems=true
 left_tabs=true
 mirror_doc_tabs=true
