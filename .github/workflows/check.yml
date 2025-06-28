@@ -1,21 +1,17 @@
-name: Whiskers Check
+name: whiskers
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
 jobs:
-  check:
-    # change to ubuntu-latest after GitHub properly rolls out 24.04 (whiskers v2.5.1 depends on 24.04)
-    # ref: https://github.com/actions/runner-images/issues/10636
-    runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: catppuccin/setup-whiskers@v1
-        with:
-          whiskers-version: 2.5.1
-      - run: |
-          whiskers templates/kvantum.tera --check
-          whiskers templates/svg.tera --check
+  run:
+    uses: catppuccin/actions/.github/workflows/whiskers-check.yml@v1
+    with:
+      args: |
+        templates/kvantum.tera
+        templates/svg.tera
+    secrets: inherit
