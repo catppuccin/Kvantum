@@ -80,16 +80,16 @@ light.color=#51576D
 mid.light.color=#51576D
 dark.color=#292C3C
 mid.color=#292C3C
-highlight.color=#81C8BE
-inactive.highlight.color=#81C8BE
+highlight.color=#81C8BE4D
+inactive.highlight.color=#51576D
 text.color=#C6D0F5
 window.text.color=#C6D0F5
 button.text.color=#C6D0F5
 disabled.text.color=#626880
 tooltip.text.color=#C6D0F5
-highlight.text.color=#292C3C
-link.color=#F2D5CF
-link.visited.color=#8CAAEE
+highlight.text.color=#C6D0F5
+link.color=#81C8BE
+link.visited.color=#8FCAC9
 
 [ItemView]
 inherits=PanelButtonCommand
@@ -98,7 +98,8 @@ interior.element=itemview
 frame=true
 interior=true
 text.iconspacing=3
-text.toggle.color=#292C3C
+text.press.color=#C6D0F5
+text.toggle.color=#C6D0F5
 
 [RadioButton]
 inherits=PanelButtonCommand
@@ -127,8 +128,8 @@ interior.element=button
 frame.element=button
 text.normal.color=#C6D0F5
 text.focus.color=#C6D0F5
-text.press.color=#292C3C
-text.toggle.color=#292C3C
+text.press.color=#C6D0F5
+text.toggle.color=#C6D0F5
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
@@ -230,7 +231,7 @@ frame.bottom=3
 frame.left=3
 frame.right=3
 indicator.size=10
-text.normal.color=#626880
+text.normal.color=#949CBB
 text.focus.color=#C6D0F5
 text.press.color=#C6D0F5
 text.toggle.color=#C6D0F5
@@ -312,9 +313,13 @@ interior.element=tbutton
 indicator.element=arrow
 text.normal.color=#C6D0F5
 text.focus.color=#C6D0F5
-text.press.color=#292C3C
-text.toggle.color=#292C3C
+text.press.color=#C6D0F5
+text.toggle.color=#C6D0F5
 text.bold=false
+
+[ToolbarLineEdit]
+frame.element=lineedit
+interior.element=lineedit
 
 [Scrollbar]
 inherits=PanelButtonCommand
@@ -422,6 +427,7 @@ text.margin.top=1
 text.margin.bottom=1
 text.margin.left=3
 text.margin.right=3
+text.press.color=#C6D0F5
 text.toggle.color=#C6D0F5
 
 [ToolboxTab]
@@ -451,7 +457,7 @@ blur_translucent=true
 centered_forms=false
 kinetic_scrolling=false
 middle_click_scroll=false
-no_selection_tint=false
+no_selection_tint=true
 noninteger_translucency=false
 style_vertical_toolbars=false
 blur_only_active_window=false
