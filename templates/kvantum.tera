@@ -5,7 +5,7 @@ whiskers:
    - flavor
    - accent
   filename: 'themes/catppuccin-{{ flavor.identifier }}-{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.kvconfig'
-  hex_format: "{{R}}{{G}}{{B}}"
+  hex_format: "{{R}}{{G}}{{B}}{{Z}}"
 ---
 [%General]
 author=elkrien based on Arc Dark style
@@ -91,16 +91,16 @@ light.color=#{{ surface1.hex }}
 mid.light.color=#{{ surface1.hex }}
 dark.color=#{{ mantle.hex }}
 mid.color=#{{ mantle.hex }}
-highlight.color=#{{ accent.hex }}
-inactive.highlight.color=#{{ accent.hex }}
+highlight.color=#{{ accent | mod(opacity=0.3) | get(key="hex") }}
+inactive.highlight.color=#{{ surface1.hex }}
 text.color=#{{ text.hex }}
 window.text.color=#{{ text.hex }}
 button.text.color=#{{ text.hex }}
 disabled.text.color=#{{ surface2.hex }}
 tooltip.text.color=#{{ text.hex }}
-highlight.text.color=#{{ mantle.hex }}
-link.color=#{{ rosewater.hex }}
-link.visited.color=#{{ blue.hex }}
+highlight.text.color=#{{ text.hex }}
+link.color=#{{ accent.hex }}
+link.visited.color=#{{ accent | mix(color=text, amount=0.8) | get(key="hex") }}
 
 [ItemView]
 inherits=PanelButtonCommand
@@ -109,7 +109,8 @@ interior.element=itemview
 frame=true
 interior=true
 text.iconspacing=3
-text.toggle.color=#{{ mantle.hex }}
+text.press.color=#{{ text.hex }}
+text.toggle.color=#{{ text.hex }}
 
 [RadioButton]
 inherits=PanelButtonCommand
@@ -138,8 +139,8 @@ interior.element=button
 frame.element=button
 text.normal.color=#{{ text.hex }}
 text.focus.color=#{{ text.hex }}
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.press.color=#{{ text.hex }}
+text.toggle.color=#{{ text.hex }}
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
@@ -241,7 +242,7 @@ frame.bottom=3
 frame.left=3
 frame.right=3
 indicator.size=10
-text.normal.color=#{{ surface2.hex }}
+text.normal.color=#{{ overlay2.hex }}
 text.focus.color=#{{ text.hex }}
 text.press.color=#{{ text.hex }}
 text.toggle.color=#{{ text.hex }}
@@ -323,9 +324,13 @@ interior.element=tbutton
 indicator.element=arrow
 text.normal.color=#{{ text.hex }}
 text.focus.color=#{{ text.hex }}
-text.press.color=#{{ mantle.hex }}
-text.toggle.color=#{{ mantle.hex }}
+text.press.color=#{{ text.hex }}
+text.toggle.color=#{{ text.hex }}
 text.bold=false
+
+[ToolbarLineEdit]
+frame.element=lineedit
+interior.element=lineedit
 
 [Scrollbar]
 inherits=PanelButtonCommand
@@ -433,6 +438,7 @@ text.margin.top=1
 text.margin.bottom=1
 text.margin.left=3
 text.margin.right=3
+text.press.color=#{{ text.hex }}
 text.toggle.color=#{{ text.hex }}
 
 [ToolboxTab]
@@ -462,7 +468,7 @@ blur_translucent=true
 centered_forms=false
 kinetic_scrolling=false
 middle_click_scroll=false
-no_selection_tint=false
+no_selection_tint=true
 noninteger_translucency=false
 style_vertical_toolbars=false
 blur_only_active_window=false
