@@ -44,6 +44,7 @@
 ## 💝 Thanks to
 
 - [elkrien](https://github.com/elkrien)
+- [bastaynav](https://github.com/bastaynav)
 
 &nbsp;
 
