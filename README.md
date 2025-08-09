@@ -37,9 +37,17 @@
 
 ## Usage
 
-1. Open Kvantum Manager.
-2. Install your preferred flavor and accent combination theme from [`themes`](./themes/).
-3. Apply the installed theme.
+1. Clone this repo and move into the cloned directory.
+    ```sh
+    git clone https://github.com/catppuccin/Kvantum.git
+    cd Kvantum
+    ```
+2. Copy the theme folders to the kvantum config folder.
+    ```sh
+    mkdir -p ~/.config/Kvantum
+    cp -r themes/* ~/.config/Kvantum/
+    ```
+3. Apply the installed themes via Kvantum Manager.
 
 ## 💝 Thanks to
 
